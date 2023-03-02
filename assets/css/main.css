@@ -1,0 +1,1662 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Merriweather:wght@300;400;700;900&display=swap');
+
+/* font-family: 'Lato', sans-serif;
+font-family: 'Merriweather', serif; */
+
+:root{
+    --maincolor: #272F46;
+    --black: #000;
+    --white: #EDEDEF;
+    --orange: #EB832A;
+    --green: #58B9B5;
+    --pink: #C18089;
+    --bordercolor: #282F44;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Merriweather', serif;
+    font-size: 18px;
+    line-height: 1.4;
+    letter-spacing: 0;
+    color: var(--maincolor);
+    font-weight: 300;
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    box-shadow: none;
+    outline: none;
+    transition: all  0.2s linear;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+}
+p{
+    margin-bottom: 20px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Lato', sans-serif;
+    font-weight: bold; 
+    line-height: 1.1;
+}
+
+h1 {
+    font-size: 87px;
+}
+
+h2 {
+    font-size: 67px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 47px;
+}
+
+h4 {
+    font-size: 40px;
+}
+
+h5 {
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+h6 {
+    font-size: 25px;
+}
+
+input, textarea, button, a, select {
+    outline: none;
+}
+
+.btn{
+    background: var(--white);
+    border: 1px solid var(--white);
+    border-radius: 100px;
+    letter-spacing: 0.36px;
+    font-family: 'Merriweather', serif;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 9px 22px;
+    transition: all  0.25s linear;
+    box-shadow: none !important;
+}
+.btn:hover{
+    background: transparent;
+    border: 1px solid var(--white);
+    color: var(--white);
+}
+.btn.btn-orange {
+    color: var(--orange);
+    padding: 12px 23px;
+}
+.btn.btn-orange:hover {
+    background: var(--orange);
+    color: var(--white);
+    border-color: var(--orange);
+}
+.btn.btn-blue {
+    background-color: var(--maincolor);
+    color: #fff;
+    min-width: 180px;
+    text-align: center;
+    border-color: var(--maincolor);
+}
+.btn.btn-blue:hover{
+    background: transparent;
+    color: var(--maincolor);
+}
+.btn.btn-green {
+    background-color: var(--green);
+    color: var(--white);
+    border-color: var(--green);
+}
+.btn.btn-green:hover {
+    background-color: transparent;
+    color: var(--green);
+    border-color: var(--green);
+}
+
+.btn.btn-white {
+    background-color: #fff;
+    color: var(--maincolor);
+    min-width: 180px;
+    text-align: center;
+    border-color: #fff;
+    border: 1px solid #fff;
+}
+.btn.btn-white:hover{
+    border: 1px solid var(--maincolor);
+    color: #fff;
+    background-color: var(--maincolor);
+}
+
+input, textarea {
+    border-radius: 31px;
+    background-color: #fff;
+    font-size: 18px;
+    padding: 10px 20px;
+    color: #1C1726;
+    font-family: 'Lato', sans-serif;
+    border: 1px solid #fff;
+    width: 100%;
+}
+.form-group {
+    margin-bottom: 20px;
+}
+.container-fluid {
+    max-width: 1850px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.orange{
+    color: var(--orange) !important;
+}
+.black{
+    color: var(--maincolor) !important;
+}
+
+/* header css start header===================== */
+header.header {
+    background: var(--maincolor);
+    padding: 58px 0;
+    position: relative;
+    z-index: 99;
+}
+header.header nav.navbar {
+    padding: 0;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+header.header nav.navbar .navbar-brand {
+    width: 100%;
+    -ms-flex: 0 0 20%;
+    flex: 0 0 20%;
+    max-width: 20%;
+    padding: 0;
+    margin: 0;
+}
+
+header.header nav.navbar .main-menu {
+    width: 100%;
+    justify-content: flex-end;
+    -ms-flex: 0 0 80%;
+    flex: 0 0 80%;
+    max-width: 80%;
+    text-align: right;
+}
+.main-menu > ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: right;
+}
+.main-menu > ul li{
+    display: inline-block;
+    padding: 0 8px;
+    position: relative;
+}
+.main-menu > ul li.active > a::after{
+    content: "";
+    height: 2px;
+    background-color: var(--white);
+    width: 100%;
+    position: absolute;
+    bottom: -12px;
+    left: 0;
+}
+.main-menu > ul > li > a {
+    color: var(--white);
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    font-size: 26px;
+    position: relative;
+    padding: 0 15px;
+}
+.search-menu a.search-icon {
+    color: var(--maincolor);
+    background: var(--white);
+    padding: 5px;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    text-align: center;
+    line-height: 42px;
+    font-size: 22px;
+}
+a.btn.btn-header {
+    border-radius: 15px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    font-size: 24px;
+}
+.search-menu {
+    padding: 0 35px 0 75px;
+}
+.navbar-brand img {
+    max-width: 67px;
+}
+button.navbar-toggler {
+    border: 0;
+    padding: 0;
+    outline: none;
+    box-shadow: none;
+    position: relative;
+    z-index: 99;
+}
+button.navbar-toggler[aria-expanded="true"] {
+    position: fixed;
+    right: 40px;
+}
+button.navbar-toggler span {
+    display: block;
+    background: #fff;
+    height: 3px;
+    width: 34px;
+    margin: 5px 0;
+    border-radius: 15px;
+    transition: all 0.3s linear;
+    position: relative;
+}
+button.navbar-toggler[aria-expanded="true"] span {
+    background: var(--maincolor);
+    transition: all 0.3s linear;
+    height: 4px;
+}
+button.navbar-toggler[aria-expanded="true"] span:last-child {
+    transform: rotate(-45deg);
+    top: -4px;
+}
+button.navbar-toggler[aria-expanded="true"] span:first-child {
+    transform: rotate(45deg);
+    top: 5px;
+}
+button.navbar-toggler[aria-expanded="true"] span:nth-child(2){
+    display: none;
+}
+
+header.header * {
+    position: static;
+}
+header.header ul.sub-menu {
+    margin: 0;
+    background: var(--white);
+    position: absolute;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: 0;
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+    margin-top: 35px;
+}
+.main-menu > ul li.has-children {
+    position: static;
+}
+.navbar li.has-children > a.active-menu + ul.sub-menu {
+    padding: 30px 20px;
+    height: auto;
+    opacity: 1;
+}
+li.has-children li {
+    padding: 0 15px;
+}
+ul.sub-menu li a {
+    font-family: 'Lato', sans-serif;
+    color: var(--maincolor);
+    font-weight: 400;
+    font-size: 20px;
+}
+ul.sub-menu li a.active {
+    font-weight: bold;
+}
+/* ================== header css end here ================== */
+
+/* footer css start here ========================= */
+footer.footer {
+    background: var(--maincolor);
+    padding: 120px 0 40px;
+}
+footer ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.footer-menu{
+    padding-bottom: 50px;
+}
+.footer-menu ul li{
+    padding-bottom: 12px;
+}
+.footer-menu ul li a{
+    color: var(--white);
+    font-family: 'Lato', sans-serif;
+    font-weight: bold; 
+    font-size: 22px;
+}
+.footer-menu ul li a:hover{
+    opacity: 0.7;
+}
+.footer-form h5 {
+    color: var(--white);
+    font-size: 27px;
+    font-family: 'Merriweather', serif;
+    text-align: center;
+    padding-bottom: 18px;
+    max-width: 270px;
+    margin: 0 auto;
+    line-height: 1.35;
+}
+.footer-form {
+    max-width: 570px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+.form-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+.form-wrapper .form-group {
+    padding: 0 10px;
+    width: 50%;
+}
+.form-wrapper .form-group.full-row {
+    width: 100%;
+}
+.form-group.submit-row {
+    margin: 0;
+    position: relative;
+    width: 100%;
+}
+.form-group.submit-row input.submit-btn {
+    width: auto;
+    position: absolute;
+    right: 9px;
+    bottom: 20px;
+    padding: 10px 0;
+    opacity: 0;
+}
+.footer-social ul li {
+    padding-bottom: 30px;
+    text-align: right;
+}
+.footer-social ul li a {
+    background: var(--white);
+    border: 1px solid var(--white);
+    color: var(--maincolor);
+    padding: 10px;
+    width: 70px;
+    height: 70px;
+    font-size: 40px;
+    text-align: center;
+    line-height: 55px;
+    border-radius: 100%;
+}
+.footer-social ul li a:hover{
+    background: transparent;
+    color: var(--white);
+}
+.footer-logo {
+    text-align: center;
+    padding-top: 47px;
+}
+.footer-logo img{
+    max-width: 350px;
+}
+.copy-rights {
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    letter-spacing: -0.13px;
+    padding-top: 30px;
+}
+.copy-rights p {
+    margin: 0;
+}
+.mobile-footer-logo {
+    display: none;
+}
+/* footer css end here ========================== */
+
+/* ====================== home page sections css start here ======================== */
+.scrolldown {
+    position: fixed;
+    right: 8%;
+    bottom: 80px;
+    z-index: 9;
+    transition: all 0.4s ease-in-out;
+    opacity: 0;
+    pointer-events: none;
+}
+.scrolldown.scroll{
+    opacity: 1;
+    pointer-events: initial;
+}
+.scrolldown.scroll img{
+    display: block;
+    transform: rotate(180deg);
+}
+.scrolldown img {
+    max-width: 55px;
+    filter: drop-shadow(2px 4px 6px #272f4675);
+    transform: rotate(0deg);
+    transition: all 0.4s ease-in-out;
+}
+.main-page {
+    overflow-x: hidden;
+}
+.white{
+    color: var(--white);
+}
+.main-banner {
+    background-color: var(--maincolor);
+    padding: 80px 0 120px;
+    min-height: calc(100vh - 180px);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.banner--content {
+    position: relative;
+}
+.banner-content h5 {
+    font-family: 'Merriweather', serif;
+    color: var(--orange);
+}
+.banner-content p {
+    max-width: 640px;
+    margin-bottom: 25px;
+}
+.banner-image {
+    text-align: center;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+}
+.banner--right__image img.banner-image {
+    max-width: 300px;
+    border-radius: 35px;
+    right: 15%;
+    min-height: 300px;
+    object-fit: cover;
+    max-height: 300px;
+}
+.banner--right__image.image2 img.banner-image {
+    min-height: 400px;
+    max-height: 400px;
+    box-shadow: 0px 3px 6px #00000029;
+}
+.banner--right__image.image1 img.banner-image {
+    max-width: 220px;
+    z-index: 2;
+    right: -50%;
+}
+.banner--right__image {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.banner--right__image.image1 {
+    display: flex;
+    margin-top: 25%;
+}
+.kitty-text {
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 10px;
+    background: var(--white);
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    max-width: 315px;
+    z-index: 4;
+    position: relative;
+    bottom: 40px;
+}
+.kitty-text.kitty2 {
+    right: -35%;
+}
+.kitty-text p{
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.kitty-text img {
+    max-width: 45px;
+    margin-right: 15px;
+}
+
+.findyour-pet{
+    background-color: var(--maincolor);
+}
+.findyourpet {
+    background: var(--green);
+    padding: 140px 0 60px;
+    border-radius: 100px 100px 0 0;
+}
+.find-box {
+    background: #fff;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 34px;
+    padding: 25px 45px 30px;
+    max-width: 415px;
+    margin-bottom: 80px;
+}
+.find-box h5{
+    position: relative;
+    color: var(--maincolor);
+}
+.find-box h5::before {
+    content: "";
+    background-color: var(--orange);
+    height: 100%;
+    width: 4px;
+    position: absolute;
+    left: -20px;
+    top: 0;
+}
+.find-box p {
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    line-height: 1.3;
+}
+.petfind-image {
+    text-align: center;
+    margin-bottom: 60px;
+    position: relative;
+}
+.petfind-image:before {
+    width: 60%;
+    content: "";
+    height: 65%;
+    position: absolute;
+    background: #fff;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 30px;
+    transform: translate(-50%, -50%);
+    top: 60%;
+    left: 50%;
+    z-index: 0;
+}
+.petfind-image img {
+    max-width: 450px;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+.petfind-wrapper.reverse .find-box {
+    margin-left: auto;
+}
+.alinc{
+    align-items: center;
+}
+.featured-logo{
+    padding: 50px 0;
+}
+.blue-heading{
+    text-align: center;
+    padding-bottom: 30px;
+}
+.blue-heading h4{
+    color: var(--green);
+}
+.logo-slider .owl-stage {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+section.feeding-guide {
+    background: var(--orange);
+    padding: 0 15px;
+    box-shadow: 30px 30px 30px #00000029;
+}
+.question-image {
+    height: 100%;
+}
+.question-image img {
+    width: 100%;
+    min-height: 380px;
+    object-fit: cover;
+    object-position: right;
+    margin-left: -15px;
+    height: 100%;
+}
+.question-wrap h5 {
+    color: #fff;
+    font-weight: 400;
+    font-family: 'Lato', sans-serif;
+    font-style: italic;
+}
+.question-wrap h5 b {
+    font-weight: 900;
+}
+.question-wrap {
+    text-align: left;
+    padding-bottom: 20px;
+}
+.question-text {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 100px 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+section.trending-bread {
+    padding: 150px 0 100px;
+    position: relative;
+}
+section.trending-bread:before {
+    content: "";
+    background: var(--green);
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.bread-dogs {
+    background: var(--maincolor);
+    border-radius: 100px;
+    box-shadow: 30px 10px 20px #00000029;
+    padding: 120px 0;
+}
+.heading-wrap {
+    text-align: center;
+    margin-bottom: 40px;
+}
+.heading-wrap h4 {
+    color: var(--white);
+    text-align: center;
+    border-left: 4px solid #DD8740;
+    display: inline-block;
+    padding: 10px 35px;
+    font-size: 40px;
+}
+
+.dog-slider {
+    padding-top: 30px;
+}
+section.trending-bread .owl-stage {
+    margin-left: -200px;
+}
+.breeds-box {
+    border-radius: 70px;
+    background: #fff;
+    max-width: 310px;
+    margin: 0 auto;
+}
+.breeds-image img {
+    border-radius: 70px 70px 0 0;
+    height: 210px;
+    width: 100%;
+    object-fit: cover;
+}
+.silly-gogue {
+    border-radius: 65px;
+    padding: 35px 40px 25px;
+    background: #fff;
+    margin-top: -60px;
+    position: relative;
+}
+.douge {
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 10px;
+    background: var(--maincolor);
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    margin-bottom: 20px;
+}
+.silly-gogue .douge img {
+    width: 35px;
+    height: 35px;
+    object-fit: cover;
+    margin-right: 8px;
+}
+.douge p {
+    margin: 0;
+    font-weight: bold;
+}
+.desc-douge {
+    text-align: center;
+}
+.desc-douge p{
+    font-size: 16px;
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    line-height: 1.3;
+}
+section .owl-carousel .owl-nav button {
+    width: 55px;
+    height: 55px;
+    border-radius: 100%;
+    text-align: center;
+    margin: 0 30px;
+    position: relative;
+    border: 0;
+    outline: none;
+}
+section .owl-carousel .owl-nav button::before {
+    content: "";
+    background-image: url(../images/left-arw.png);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: contain;
+    top: 0;
+    left: 0;
+    z-index: 4;
+}
+section .owl-carousel .owl-nav button.owl-next::before{
+    background-image: url(../images/right-arw.png);
+}
+.bread-dogs .owl-nav {
+    padding-top: 50px;
+    text-align: center;
+}
+section .owl-carousel .owl-nav button span {
+    display: none;
+}
+.sliders-dog {
+    padding-bottom: 100px;
+}
+.btn.small-btn {
+    font-size: 15px;
+    width: auto;
+    min-width: auto;
+}
+.sliders-cat {
+    padding-bottom: 50px;
+}
+
+
+.guide-head {
+    max-width: 80%;
+    margin: 0 auto;
+    margin-bottom: 80px;
+}
+.guide-head h2 {
+    font-family: 'Merriweather', serif;
+    font-size: 62px;
+    max-width: 780px;
+}
+.guide-wraper {
+    max-width: 325px;
+    background: rgb(209 101 63 / 17%);
+    text-align: center;
+    padding: 60px 42px 50px;
+    height: 100%;
+    margin: 0 auto;
+}
+.guide-wraper img {
+    max-width: 45px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    height: 65px;
+    object-fit: contain;
+}
+.guide-wraper h6 {
+    font-family: 'Merriweather', serif;
+    margin-bottom: 25px;
+    font-size: 25px;
+}
+.guide-wraper p {
+    margin-bottom: 40px;
+    line-height: 1.3;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+section.guides-tips {
+    background: var(--green);
+}
+.guide {
+    padding-bottom: 160px;
+    border-radius: 0 0 100px 100px;
+    background-color: #FFF;
+}
+section.guides-tips .owl-stage {
+    display: flex;
+    flex-wrap: wrap;
+}
+section.guides-tips .owl-stage .slide {
+    height: 100%;
+}
+.guides-wrapper {
+    margin-left: 17vw;
+}
+section .guides-wrapper .owl-carousel .owl-nav button::before {
+    background-image: url(../images/blue-arw.png);
+}
+.guides-wrapper .owl-nav {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    transform: translateY(-50%);
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+section .guides-wrapper .owl-nav button{
+    margin: 0;
+    width: 80px;
+    height: 80px;
+    position: relative;
+    left: -12%;
+}
+section .guides-wrapper .owl-nav button.owl-next {
+    left: auto;
+    right: 0;
+    opacity: 0;
+}
+section .guides-wrapper .owl-nav button.owl-next::before {
+    transform: scale(-1);
+}
+
+section.review-section {
+    background: var(--green);
+    padding: 120px 0;
+}
+.review-head {
+    text-align: right;
+    color: #fff;
+}
+.review-head p {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+.review-head h4 {
+    font-size: 36px;
+    font-family: 'Merriweather', serif;
+    max-width: 300px;
+    margin-left: auto;
+    margin-bottom: 25px;
+}
+.review-head h4 span {
+    font-weight: 300;
+    font-style: italic;
+}
+.review-head h6 {
+    font-family: 'Merriweather', serif;
+    max-width: 430px;
+    margin-left: auto;
+    margin-bottom: 35px;
+}
+.review-images {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+}
+.review-images img {
+    border-radius: 100%;
+    object-fit: cover;
+    width: 88px;
+    height: 88px;
+    border: 1px solid var(--bordercolor);
+    background: #fff;
+    padding: 7px;
+    margin-right: -25px;
+    position: relative;
+}
+.review-images img:first-child {
+    margin: 0;
+    z-index: 0;
+}
+.review-desc {
+    box-shadow: 20px 30px 20px #00000029;
+    border-radius: 50px;
+    background: #fff;
+    padding: 80px 50px 50px;
+    margin-top: -45px;
+    margin-bottom: 40px;
+}
+.review-slide {
+    max-width: 770px;
+    margin: 0 auto;
+}
+.review-desc p {
+    letter-spacing: -0.13px;
+    font-size: 20px;
+    font-weight: 300;
+    font-style: italic;
+    font-family: 'Lato', sans-serif;
+    line-height: 1.2;
+    margin-bottom: 30px;
+}
+.author {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.author h6 {
+    margin: 0;
+    font-size: 22px;
+    font-family: 'Merriweather', serif;
+    margin-right: 40px;
+}
+.stars i {
+    color: var(--orange);
+    font-size: 25px;
+    margin: 0 2px;
+}
+.review-slide img.rev-img {
+    width: 160px;
+    height: 160px;
+    border-radius: 100%;
+    object-fit: cover;
+    padding: 13px;
+    background-color: var(--orange);
+    margin-left: 60px;
+    position: relative;
+}
+
+/* ====================== home page sections css end here ======================== */
+
+
+/* ======================= index page css start here ====================== */
+section.index-banner {
+    position: relative;
+}
+img.index-img {
+    max-height: calc(100vh - 185px);
+    object-fit: cover;
+    min-height: 60vh;
+}
+.index-form {
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    width: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 970px;
+}
+.index-form .form-wrap input {
+    padding: 35px 25px;
+    border-radius: 55px;
+    padding-left: 95px;
+}
+.index-form .form-wrap .submit-row {
+    background-image: url(../images/search.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: min-content;
+    position: absolute;
+    top: 17px;
+    left: 20px;
+}
+.index-form .form-wrap .submit-row input.submit-btn {
+    position: relative;
+    bottom: 0;
+    right: auto;
+    padding: 18px 6px;
+}
+.green-bg{
+    background-color: var(--green);
+}
+section.index--listing{
+    padding-bottom: 130px;
+}
+.index--listing__details{
+    background-color: #fff;
+    padding: 100px 0;
+    border-radius: 0 0 100px 100px;
+}
+.heading-index h4 {
+    text-transform: uppercase;
+    color: var(--orange);
+}
+.breeds-list {
+    padding: 60px 0;
+    position: relative;
+}
+.breeds-list h5 {
+    color: var(--green);
+    margin-bottom: 18px;
+}
+.breeds-list ul {
+    padding-left: 20px;
+}
+.breeds-list ul li {
+    color: #707070;
+    text-decoration: underline;
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    position: relative;
+}
+.breeds-list ul li a{
+    color: #707070;
+    text-decoration: underline;
+}
+.index-listing hr {
+    border-top: 3px solid var(--bordercolor);
+}
+.border_right:after {
+    content: "";
+    width: 3px;
+    height: 65%;
+    background: var(--bordercolor);
+    position: absolute;
+    right: 15%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.index-listing .border_right:last-child::after{
+    display: none;
+}
+
+/* ======================= index page css end here ====================== */
+
+
+/* ===================== Dog breed guide css start ========================== */
+.breed-guide-banner {
+    position: relative;
+}
+.breed-content {
+    position: absolute;
+    width: 100%;
+    transform: translate(-50%, -50% );
+    left: 50%;
+    top: 40%;
+}
+.breed-content .container {
+    position: relative;
+}
+.breed-content h1 {
+    font-weight: 900;
+    color: var(--white);
+}
+.breed-content h5 {
+    color: var(--white);
+    font-family: 'Merriweather', serif;
+    margin-bottom: 30px;
+}
+.sausage-box {
+    background-color: var(--white);
+    width: auto;
+    border-radius: 34px;
+    padding: 38px 30px;
+    max-width: 700px;
+    width: max-content;
+}
+.sausage-box ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+}
+.sausage-box ul li {
+    display: inline-block;
+    padding: 15px 28px;
+    text-align: center;
+}
+.sausage-box ul li img {
+    height: 76px;
+    object-fit: contain;
+    width: auto;
+    margin-bottom: 25px;
+}
+.sausage-box ul li h6 {
+    font-size: 22px;
+    color: var(--orange);
+}
+.sausage-box ul li p {
+    margin: 0;
+}
+.main-page .main-wrapper img.breed-icon {
+    position: absolute;
+    width: 52px;
+    right: 0;
+    top: 0;
+    height: 52px;
+    object-fit: contain;
+    min-height: initial;
+}
+.jump-breed-section {
+    padding: 26px 0;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+}
+.jump-breed-section ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    width: calc(100% - 135px);
+    display: block;
+}
+.jump-breed-section ul li{
+    display: inline-block;
+    padding: 0 15px;
+}
+.jump-breed-section ul li a {
+    font-size: 20px;
+    color: #fff;
+}
+.jump-breed-section ul li.active a{
+    font-weight: bold;
+}
+.jump-breed p {
+    margin: 0;
+    font-weight: bold;
+    font-size: 22px;
+    padding-right: 25px;
+    width: 135px;
+}
+.jump-breed {
+    display: flex;
+    align-items: center;
+    /* flex-wrap: wrap; */
+}
+
+section.overview_section {
+    background: #fff;
+    padding: 50px 0;
+    font-size: 20px;
+}
+.orange-color{
+    color: #D1653F;
+    margin-bottom: 30px;
+}
+.overview-left {
+    padding-right: 100px;
+}
+.overview-sidebar {
+    border-radius: 80px;
+    background: var(--orange);
+    padding: 50px 55px 20px;
+    max-width: 500px;
+    margin-left: auto;
+}
+.pro-cons {
+    padding-bottom: 25px;
+}
+.pro-cons h4 {
+    position: relative;
+    padding: 5px 12px;
+}
+.pro-cons h4:before {
+    content: "";
+    width: 4px;
+    background: var(--white);
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+.pro-cons ul {
+    color: var(--white);
+    font-weight: bold;
+    list-style: none;
+    padding-left: 10px;
+}
+.pro-cons ul li{
+    position: relative;
+    padding-bottom: 5px;
+}
+.pro-cons ul li:before {
+    content: "-";
+    margin-right: 5px;
+}
+
+
+section.gallery {
+    background: #fff;
+}
+.gallery-slider{
+    padding: 20px 0;
+}
+.gallery-slider .items img {
+    max-height: 550px;
+    object-fit: cover;
+    height: 100%;
+    min-height: 320px;
+}
+.gallery-slider .owl-stage {
+    display: flex;
+}
+.gallery-slider .owl-item .items {
+    height: 100%;
+}
+
+.accordian-header a.card-link {
+    letter-spacing: 0.58px;
+    color: var(--maincolor);
+    font-size: 32px;
+    font-weight: bold;
+    font-family: 'Lato', sans-serif;
+    padding: 25px 0;
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    line-height: 1.1;
+}
+.accordian-header a.card-link::before {
+    content: "\2b";
+    font-weight: 600;
+    font-family: "Font Awesome 6 Free";
+    display: inline-block;
+    color: var(--green);
+    margin-right: 25px;
+    transform: scale(1.1);
+}
+.accordian-body {
+    padding-left: 55px;
+    padding-bottom: 20px;
+}
+.border_radious-bottom {
+    border-radius: 0 0 100px 100px;
+}
+section.helpful-information {
+    padding: 110px 0 180px;
+}
+.other-info__text {
+    box-shadow: 30px 10px 20px #00000029;
+    border-radius: 32px;
+    background-color: var(--maincolor);
+    color: #fff;
+    padding: 70px;
+}
+.other-info__head {
+    text-align: center;
+    padding-bottom: 60px;
+}
+.other-info__head h3, .heading h3 {
+    font-family: 'Merriweather', serif;
+    font-weight: 900;
+}
+.info-img img{
+    max-width: 330px;
+}
+.info-img {
+    text-align: center;
+    position: relative;
+    margin-bottom: -15%;
+}
+.other-info__text .row {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+.other-info__text .row .col-md-6:nth-child(even) {
+    text-align: right;
+}
+.other-info__text ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: inline-block;
+}
+.other-info__text ul li {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    margin-bottom: 25px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+.other-info__text ul li:before {
+    content: "\f0a9";
+    font-weight: 600;
+    font-family: "Font Awesome 6 Free";
+    display: inline-block;
+    color: #C18089;
+    font-size: 34px;
+    margin-right: 22px;
+}
+
+section.dachshund-review {
+    background: #fff;
+    box-shadow: 30px 10px 20px #00000029;
+    border-radius: 98px;
+    padding: 65px 0;
+}
+.heading {
+    text-align: center;
+    margin-bottom: 50px;
+}
+.review--slider .review-slide {
+    text-align: center;
+    max-width: 430px;
+}
+.review--slider .review-slide img.rev-img {
+    transform: translateX(-50%);
+    left: 50%;
+    margin: 0;
+}
+.review--slider .review-slide .review-desc {
+    background: rgb(88 185 181 / 63%);
+    padding: 80px 35px 40px;
+}
+
+.review--slider .review-slide .review-desc p {
+    font-weight: 400;
+}
+.review--slider .review-slide .author {
+    flex-direction: column;
+    justify-content: center;
+}
+.review--slider .review-slide .author h6 {
+    margin: 0 0 20px;
+    font-weight: 900;
+}
+.love-dachshund {
+    padding: 150px 0 120px;
+}
+.dachshund-title {
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    color: #fff;
+}
+.dachshund-title h3 {
+    font-weight: 300;
+    font-family: 'Merriweather', serif;
+}
+.dachshund-title h3 span {
+    font-weight: bold;
+    display: block;
+}
+img.jump-arrow {
+    display: none;
+}
+/* ===================== Dog breed guide css end ========================== */
+
+
+/* ================== breede price css start here ==================== */
+.banner-content.white .container {
+    position: relative;
+}
+.breed-price-banner .banner-content h1,
+.breed-price-banner .banner-content h5 {
+    color: #fff;
+}
+.breed-price-banner .banner-img {
+    position: relative;
+}
+.breed-price-banner .banner-img img {
+    max-height: calc(100vh - 183px);
+    object-fit: cover;
+    min-height: 60vh;
+    object-position: bottom;
+}
+.breed-price-banner .banner-content {
+    position: absolute;
+    height: 100%;
+    top: 65px;
+    left: 0;
+    width: 100%;
+}
+
+/* dachshund-prices-guides */
+.dachshund-prices-guides {
+    background-color: #fff;
+    padding: 80px 0px;
+}
+.about-dachshund-prices .blog-title {
+    max-width: 645px;
+    width: 100%;
+    margin-bottom: 25px;
+}
+.about-dachshund-prices h4 {
+    color: #D1653F;
+    font-weight: bold;
+    line-height: 1.2;
+}
+.about-dachshund-prices {
+    font-size: 20px;
+    color: var(--maincolor);
+    line-height: 1.4;
+    padding-right: 60px;
+}
+.about-dachshund-prices ul {
+    margin: 0px;
+    padding: 30px 0px;
+    list-style: none;
+}
+.about-dachshund-prices ul li {
+    color: #D1653F;
+    font-size: 28px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+.about-dachshund-prices ul li i {
+    color: var(--green);
+    font-size: 52px;
+    padding-right: 19px;
+}
+.about-dachshund-prices h5 {
+    padding: 25px 0px 5px;
+    color: var(--pink);
+    font-size: 31px;
+    letter-spacing: 0.56px;
+    line-height: 1;
+}
+.about-dachshund-prices h6 {
+    text-align: center;
+    padding: 30px 0 5px;
+    margin: 0;
+}
+.about-dachshund-prices img {
+    padding: 20px 0px 30px;
+}
+.about-dachshund-prices iframe {
+    width: 100%;
+    border-radius: 20px;
+    height: 100%;
+    min-height: 500px;
+    margin-bottom: 30px;
+}
+
+/* dachshund-guides */
+.petfind-wrapper {
+    display: block;
+}
+.sidebar-title {
+    text-align: center;
+    letter-spacing: 0.76px;
+    color: #FFFFFF;
+    padding: 0px 25px;
+    margin-bottom: 60px;
+}
+.dachshund-guides {
+    border-radius: 80px;
+    background: var(--orange);
+    padding: 80px 50px 100px;
+}
+.dachshund-guides .find-box h5::before {
+    background-color: var(--green);
+}
+
+/* Check-out-breeds */
+section.Check-out-breeds {
+    position: relative;
+}
+section.Check-out-breeds::before {
+    content: "";
+    height: 40%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 0;
+    background: #fff;
+    border-radius: 0 0 100px 100px;
+}
+.Check-breeds-image {
+    position: relative;
+}
+.Check-breeds-image img {
+    border-radius: 130px;
+    box-shadow: 0px 30px 20px #00000029;
+    min-height: 300px;
+    object-fit: cover;
+}
+.Check-out-breeds .blog-title {
+    color: #fff;
+    text-align: center;
+    max-width: 900px;
+    margin: 0px auto;
+    padding: 200px 0px 140px;
+}
+.Check-out-breeds .blog-title span {
+    font-weight: bold;
+}
+.Check-out-breeds .blog-title h3 {
+    font-weight: 300;
+    font-family: 'Merriweather', serif;
+}
+
+/* breeds-size-maintenance */
+.breeds-size-maintenance {
+    padding: 0px 0px 100px;
+}
+.breeds-size-maintenance:last-child {
+    padding: 0px 0px 200px;
+}
+.breeds-size-maintenance .guide {
+    background-color: #fff;
+    padding: 40px 0px 70px;
+    border-radius: 0px;
+    box-shadow: 30px 10px 20px #00000029;
+}
+.breeds-size-maintenance .section-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+.breeds-size-maintenance .section-title h4 {
+    font-size: 37px;
+}
+.breeds-size-maintenance .item img {
+    border-radius: 34px;
+    max-height: 370px;
+    object-fit: cover;
+}
+.breeds-size-wrapper .item {
+    position: relative;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 34px;
+    margin: 8px;
+}
+.breeds-size-maintenance .item .btn.btn-white {
+    position: absolute;
+    bottom: 30px;
+    transform: translateX(-50%);
+    left: 50%;
+}
+.breeds-size-maintenance .owl-stage {
+    display: flex;
+    flex-wrap: wrap;
+}
+.breeds-size-maintenance .owl-stage .slide {
+    height: 100%;
+}
+.breeds-size-wrapper {
+    margin-left: 17vw;
+}
+section .breeds-size-wrapper .owl-nav button::before {
+    background-image: url(../images/orange-arrow.png);
+}
+section.breeds-size-maintenance .owl-stage {
+    display: flex;
+    flex-wrap: wrap;
+}
+.breeds-size-maintenance .owl-stage .slide {
+    height: 100%;
+}
+.breeds-size-wrapper .owl-nav {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    transform: translateY(-50%);
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+section .breeds-size-wrapper .owl-nav button {
+    margin: 0;
+    width: 80px;
+    height: 80px;
+    position: relative;
+    left: -10%;
+}
+section .breeds-size-wrapper .owl-nav button.owl-next {
+    left: auto;
+    right: 0;
+    opacity: 0;
+}
+section .breeds-size-wrapper .owl-nav button.owl-next::before {
+    transform: scale(-1);
+}
+.about-dachshund-prices ol {
+    list-style: disc;
+    padding-left: 20px;
+    font-weight: bold;
+    margin: 0;
+}
+.about-dachshund-prices ol li{
+    padding-bottom: 5px;
+}
+/* ================== breede price css start here ==================== */

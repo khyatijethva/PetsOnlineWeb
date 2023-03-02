@@ -1,0 +1,1168 @@
+@media (min-width: 768px){
+    .container{
+        max-width: 90%;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    .container {
+        max-width: 1440px;
+    }
+}
+@media screen and (min-width: 1700px){
+    .container {
+        max-width: 1600px;
+    }
+}
+
+/* -------------- main responsive css start here ------------- */
+
+@media screen and (max-width: 1600px) {
+    body{
+        font-size: 16px;
+    }
+    h1 {
+        font-size: 67px;
+    }
+    
+    h2 {
+        font-size: 47px;
+    }
+    
+    h3 {
+        font-size: 37px;
+    }
+    
+    h4 {
+        font-size: 30px;
+    }
+    h5 {
+        font-size: 24px;
+    }
+    h6 {
+        font-size: 20px;
+    }
+    .btn {
+        font-size: 18px;
+    }
+    .btn.btn-orange {
+        padding: 10px 23px;
+    }
+    .main-menu > ul > li > a {
+        font-size: 20px;
+    }
+    .navbar li.has-children > a.active-menu + ul.sub-menu{
+        padding: 20px 15px;
+    }
+    li.has-children li {
+        padding: 0 12px;
+    }
+    ul.sub-menu li a {
+        font-size: 18px;
+    }
+    .search-menu {
+        padding: 0 30px 0 60px;
+    }
+    .search-menu a.search-icon {
+        width: 45px;
+        height: 45px;
+        line-height: 36px;
+        font-size: 18px;
+    }
+    a.btn.btn-header {
+        font-size: 18px;
+    }
+    .navbar-brand img {
+        min-width: 55px;
+        max-width: 55px;
+    }
+    .kitty-text p {
+        font-size: 14px;
+    }
+    .banner-content p {
+        max-width: 550px;
+    }
+    .petfind-image img {
+        max-width: 350px;
+    }
+    .question-text {
+        max-width: 550px;
+        padding: 80px 0;
+    }
+    .question-image img {
+        min-height: 350px;
+    }
+    section.trending-bread {
+        padding: 120px 0 90px;
+    }
+    .bread-dogs {
+        padding: 90px 0;
+    }
+    .silly-gogue {
+        border-radius: 55px;
+        padding: 30px 30px 20px;
+    }
+    .breeds-box {
+        border-radius: 55px;
+    }
+    .breeds-image img {
+        border-radius: 55px 55px 0 0;
+    }
+    .guide-head h2 {
+        font-size: 52px;
+    }
+    .guides-wrapper {
+        margin-left: 13vw;
+    }
+    .guide-wraper h6 {
+        margin-bottom: 15px;
+    }
+    .guide-wraper p {
+        margin-bottom: 25px;
+    }
+    .guide-wraper img {
+        max-width: 40px;
+        margin-bottom: 20px;
+        height: 55px;
+    }
+    .guide-head {
+        margin-bottom: 60px;
+    }
+    .guide {
+        padding-bottom: 120px;
+    }
+    .find-box {
+        max-width: 380px;
+    }
+
+    .footer-menu ul li a {
+        font-size: 18px;
+    }
+    .footer-form h5 {
+        font-size: 22px;
+    }
+    input, textarea {
+        font-size: 16px;
+    }
+    .footer-logo {
+        padding-top: 35px;
+    }
+    .footer-logo img {
+        max-width: 300px;
+    }
+    .footer-social ul li a {
+        width: 55px;
+        height: 55px;
+        font-size: 33px;
+        line-height: 38px;
+    }
+    .footer-social ul li {
+        padding-bottom: 20px;
+    }
+    .copy-rights {
+        font-size: 16px;
+        padding-top: 10px;
+    }
+    header.header {
+        padding: 40px 0;
+    }
+    .review-head h4 {
+        font-size: 30px;
+    }
+    .review-head p {
+        margin-bottom: 10px;
+    }
+    .review-images img {
+        width: 75px;
+        height: 75px;
+        padding: 5px;
+        margin-right: -20px;
+    }
+    .review-desc {
+        padding: 70px 40px 40px;
+    }
+    .review-slide img.rev-img {
+        width: 135px;
+        height: 135px;
+        padding: 9px;
+    }
+    .author h6 {
+        font-size: 20px;
+        margin-right: 30px;
+    }
+    .stars i {
+        font-size: 22px;
+    }
+    .review-slide {
+        max-width: 80%;
+    }
+    img.index-img {
+        max-height: calc(100vh - 135px);
+    }
+    .breed-price-banner .banner-img img {
+        max-height: calc(100vh - 135px);
+    }
+    .about-dachshund-prices {
+        font-size: 18px;
+    }
+    .about-dachshund-prices ul li {
+        font-size: 22px;
+    }
+    .about-dachshund-prices ul li i {
+        font-size: 42px;
+    }
+    .sausage-box ul li img {
+        height: 50px;
+        margin-bottom: 10px;
+    }
+    .sausage-box ul li {
+        padding: 15px 18px;
+    }
+    .sausage-box {
+        padding: 28px 25px;
+    }
+    .other-info__text ul li {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+    .info-img img {
+        max-width: 250px;
+    }
+    .Check-out-breeds .blog-title {
+        max-width: 750px;
+    }
+    .kitty-text {
+        max-width: 280px;
+    }
+    section.trending-bread .owl-stage {
+        margin-left: 0;
+    }
+    .scrolldown {
+        right: 6%;
+    }
+}
+
+
+@media screen and (max-width: 1499px){
+    h1 {
+        font-size: 50px;
+    }
+    .main-menu > ul > li > a {
+        font-size: 18px;
+        padding: 0 10px;
+    }
+    .main-menu > ul li.active a::after {
+        bottom: -7px;
+    }
+    a.btn.btn-header {
+        font-size: 18px;
+    }
+    .search-menu a.search-icon {
+        width: 40px;
+        height: 40px;
+        line-height: 32px;
+        font-size: 18px;
+    }
+    .main-banner {
+        padding: 50px 0 80px;
+    }
+    .kitty-text p {
+        font-size: 12px;
+    }
+    section .owl-carousel .owl-nav button {
+        width: 50px;
+        height: 50px;
+        margin: 0 25px;
+    }
+    .bread-dogs .owl-nav {
+        padding-top: 35px;
+    }
+    .sliders-dog {
+        padding-bottom: 70px;
+    }
+    section .guides-wrapper .owl-nav button{
+        width: 70px;
+        height: 70px;
+    }
+    .border_right:after {
+        right: 10%;
+    }
+    .breeds-list {
+        padding: 45px 0;
+    }
+    .dachshund-guides {
+        padding: 80px 30px 100px;
+    }
+    .sidebar-title {
+        padding: 0px 20px;
+    }
+    .overview-sidebar {
+        border-radius: 60px;
+        padding: 50px 40px 20px;
+    }
+    section.overview_section {
+        font-size: 18px;
+    }
+    .overview-left {
+        padding-right: 60px;
+    }
+    .accordian-header a.card-link {
+        padding: 20px 0;
+        font-size: 25px;
+    }
+    .accordian-header a.card-link::before {
+        transform: scale(1.4);
+    }
+    .accordian-body {
+        padding-left: 50px;
+        padding-bottom: 0;
+    }
+    .kitty-text {
+        max-width: 250px;
+    }
+    .banner--right__image img.banner-image {
+        max-width: 250px;
+        min-height: 250px;
+        max-height: 250px;
+        right: 10%;
+    }
+    .banner--right__image.image1 img.banner-image {
+        max-width: 190px;
+    }
+    .banner--right__image.image1 {
+        margin-top: 28%;
+    }
+    .banner--right__image.image2 img.banner-image {
+        min-height: 350px;
+        max-height: 350px;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    header.header nav.navbar .main-menu {
+        -ms-flex: 0 0 90%;
+        flex: 0 0 90%;
+        max-width: 90%;
+    }
+    header.header nav.navbar .navbar-brand {
+        -ms-flex: 0 0 10%;
+        flex: 0 0 10%;
+        max-width: 10%;
+    }
+    .main-menu > ul li {
+        padding: 0 5px;
+    }
+    .search-menu {
+        padding: 0 20px 0 30px;
+    }
+    .main-menu > ul > li > a {
+        padding: 0 10px;
+    }
+    .main-menu li.has-children li {
+        padding: 0 10px;
+    }
+    .findyourpet {
+        padding: 100px 0 50px;
+    }
+    .question-text {
+        max-width: 90%;
+        padding: 60px 0;
+    }
+    .guide-head h2 {
+        font-size: 45px;
+        max-width: 75%;
+    }
+    .guides-wrapper {
+        margin: 0 auto;
+        max-width: 90%;
+    }
+    section .guides-wrapper .owl-nav button {
+        width: 55px;
+        height: 55px;
+        left: 0;
+        opacity: 1 !important;
+    } 
+    .guides-wrapper .owl-nav {
+        top: 0;
+        transform: none;
+        position: relative;
+        width: auto;
+        justify-content: center;
+        margin-top: 45px;
+    }
+    .guide {
+        padding-bottom: 100px;
+    }  
+    section.review-section {
+        padding: 90px 0;
+    } 
+    .border_right:after {
+        right: 5%;
+    }
+    .breeds-list ul li{
+        font-size: 18px;
+    }
+    .sidebar-title {
+        padding: 0px 10px;
+    }
+    .about-dachshund-prices ul li {
+        margin-bottom: 15px;
+        font-size: 20px;
+    }
+    .about-dachshund-prices ul li i {
+        font-size: 38px;
+    }
+    .dachshund-guides {
+        border-radius: 50px;
+    }
+    .dachshund-guides .find-box .btn.btn-blue {
+        min-width: auto;
+    }
+    section .breeds-size-wrapper .owl-nav button {
+        left: -15%;
+    }
+    .kitty-text {
+        max-width: 80%;
+    }
+    .banner--right__image.image1 img.banner-image {
+        right: -30%;
+    }
+    .banner--right__image img.banner-image {
+        right: 10%;
+    }
+    .banner--right__image.image2 img.banner-image {
+        min-height: 300px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    h1 {
+        font-size: 37px;
+    }
+    .breed-content h5 {
+        font-size: 17px;
+    }
+    header.header nav.navbar .navbar-collapse.main-menu {
+        background: var(--white);
+        position: fixed;
+        right: 0;
+        top: 110px;
+        max-width: 215px;
+        height: calc(100vh - 110px) !important;
+        text-align: right;
+        padding: 0px 40px 25px;
+        transition: all 0.25s linear;
+        opacity: 0;
+        overflow-y: auto;
+    }
+    header.header nav.navbar .navbar-collapse.main-menu:before {
+        content: "";
+        background: var(--white);
+        position: fixed;
+        right: 0;
+        top: -110px;
+        width: 100%;
+        height: 100%;
+        max-width: 215px;
+    }
+    header.header nav.navbar .navbar-collapse.main-menu.collapse.show {
+        right: 0;
+        opacity: 1;
+    }
+    nav.navbar .main-menu > ul {
+        max-height: 400px;
+        overflow-y: auto;
+    }
+    .main-menu > ul > li > a{
+        color: var(--maincolor);
+        font-size: 22px;
+        padding: 0;
+    }
+    .main-menu > ul li {
+        padding: 0;
+        display: block;
+        padding-bottom: 3px;
+    }
+    a.btn.btn-header {
+        background: var(--maincolor);
+        color: var(--white);
+        border-radius: 16px;
+        padding: 6px 28px;
+    }
+    header.header * {
+        position: relative;
+    }
+    header.header ul.sub-menu {
+        position: relative;
+        left: 0;
+        transform: none;
+        display: none;
+        min-width: auto;
+        margin: 0;
+        padding: 15px 0 !important;
+    }
+    li.has-children.active ul.sub-menu {
+        display: block;
+    }
+    .main-menu li.has-children li {
+        padding: 2px 0;
+    }
+    .main-menu > ul li.active > a::after {
+        bottom: 0;
+        background-color: var(--maincolor);
+    }
+    .search-menu {
+        padding: 0 0 15px;
+    }
+    .search-menu a.search-icon {
+        width: auto;
+        height: auto;
+        font-size: 22px;
+        line-height: initial;
+        padding: 0;
+    }
+    .search-menu a.search-icon i:before {
+        content: "Search";
+        font-family: 'Lato', sans-serif;
+    }
+    header.header nav.navbar .navbar-brand {
+        max-width: 150px;
+    }
+    body.menu-show {
+        overflow: hidden;
+    }
+    .guide-head h2 {
+        font-size: 37px;
+        max-width: 470px;
+    }
+    .guide-head {
+        max-width: 100%;
+    }
+    .btn {
+        font-size: 16px;
+        padding: 11px 22px;
+    }
+    .btn.btn-blue {
+        min-width: auto;
+    }
+    .review-slide {
+        max-width: 100%;
+    }
+    .community-review .row {
+        flex-direction: column-reverse;
+    }
+    .review-head {
+        text-align: center;
+        padding: 0 25px;
+    }
+    .review-head h4 {
+        max-width: initial;
+    }
+    .review-images img {
+        width: 70px;
+        height: 70px;
+    }
+    .review-images {
+        justify-content: center;
+        margin-bottom: 80px;
+    }
+    .review-slide img.rev-img {
+        width: 120px;
+        height: 120px;
+        padding: 10px;
+        margin: 0;
+        transform: translateX(-50%);
+        left: 50%;
+    }
+    .review-desc {
+        padding: 70px 30px 40px;
+        box-shadow: 7px 20px 15px #00000029;
+    }
+    .review-head h6 {
+        margin: 0 auto;
+        margin-bottom: 35px;
+    }
+    .author h6 {
+        font-size: 17px;
+        margin-right: 0;
+    }
+    .author {
+        flex-direction: column-reverse;
+    }
+    .stars {
+        margin-bottom: 25px;
+    }
+    section.review-section .container {
+        padding: 0 15px;
+    }
+    .community-review .review-slide {
+        padding: 0 20px;
+    }
+
+    .petfind-wrapper {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .find-box {
+        width: 47%;
+        margin-bottom: 60px;
+    }
+    .petfind-wrapper.reverse .find-box {
+        margin-left: 0;
+    }
+    .index-form {
+        max-width: 80%;
+    }
+    .index-form .form-wrap .submit-row input.submit-btn {
+        padding: 12px 6px;
+    }
+    .index-form .form-wrap .submit-row {
+        top: 13px;
+        left: 15px;
+    }
+    .index-form .form-wrap input {
+        padding: 25px 25px;
+        padding-left: 75px;
+    }
+    .index--listing__details {
+        padding: 60px 0;
+    }
+    .breeds-list {
+        padding: 20px 0;
+    }
+    .index-listing .border_right::after{
+        display: none;
+    }
+    .dachshund-prices-guides .width100 {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .Check-breeds-image img {
+        border-radius: 50px;
+    }
+    .dachshund-prices-guides {
+        padding: 80px 0px;
+    }
+    .Check-out-breeds .blog-title {
+        padding: 120px 0px;
+    }
+    .about-dachshund-prices {
+        padding: 0;
+    }
+    section.Check-out-breeds::before {
+        border-radius: 0px 0px 80px 80px;
+    }
+    .breeds-size-maintenance:last-child {
+        padding: 0px 0px 150px;
+    }
+    .overview-left {
+        padding-right: 0;
+    }
+    .overview-sidebar {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    .dachshund-guides {
+        padding: 60px 30px 60px;
+    }
+    .sausage-box {
+        width: auto;
+        max-width: max-content;
+    }
+    section.helpful-information {
+        padding: 80px 0 150px;
+    }
+    .about-dachshund-prices iframe {
+        min-height: 350px;
+    }
+    .banner--right__image.image2 img.banner-image {
+        min-height: 250px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .btn {
+        font-size: 15px;
+    }
+    .container, .container-sm {
+        max-width: 100%;
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+    .banner--content .row {
+        flex-direction: column-reverse;
+    }
+    .banner-image {
+        max-width: 450px;
+        margin: 0 auto;
+    }
+    .banner-content.white {
+        padding-top: 50px;
+    }
+    .kitty-text {
+        max-width: 140px;
+        bottom: 30px;
+    }
+    .kitty-text.kitty2 {
+        right: 0;
+        margin-left: auto;
+    }
+    .banner--right__image.image1 {
+        margin-top: 35%;
+    }
+    .banner--right__image img.banner-image {
+        right: 15%;
+        border-radius: 20px;
+    }
+    .banner--right__image img.banner-image,
+    .banner--right__image.image2 img.banner-image {
+        min-height: auto;
+        max-height: initial;
+    }
+    .kitty-text p {
+        font-size: 11px;
+    }
+    .kitty-text img {
+        max-width: 32px;
+        margin-right: 6px;
+    }
+    .load-more {
+        text-align: center;
+    }
+    .findyourpet {
+        border-radius: 70PX 70PX 0 0;
+        padding: 80px 0 20px;
+    }
+    .find-box {
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 60px;
+        width: 100%;
+    }
+    .petfind-image img {
+        max-width: 220px;
+    }
+    section.featured-logo {
+        padding: 25px 0;
+    }
+    .blue-heading h4 {
+        font-size: 24px;
+    }
+    .blue-heading {
+        padding-bottom: 20px;
+    }
+    .logo-slider img {
+        max-height: 50px;
+        max-width: 200px;
+        object-fit: contain;
+    }
+    .question-image img {
+        margin: 0;
+        min-height: auto;
+    }
+    .question-image img {
+        margin: 0;
+        min-height: auto;
+    }
+    section.feeding-guide .row {
+        flex-direction: column-reverse;
+    }
+    .question-wrap {
+        text-align: center;
+    }
+    .question-wrap h5 {
+        font-size: 22px;
+    }
+    .question-text {
+        max-width: 85%;
+        padding: 40px 0;
+    }    
+    section.feeding-guide .col-lg-4{
+        padding: 0;
+    }
+    section.trending-bread {
+        padding: 60px 0 80px;
+    }
+    section.trending-bread .container-fluid {
+        padding: 0 15px;
+    }
+
+    .bread-dogs {
+        padding: 60px 40px;
+        box-shadow: 18px 11px 15px #00000029;
+    }
+    .heading-wrap h4 {
+        padding: 5px 20px;
+        text-align: left;
+        max-width: 95%;
+        margin: 0 auto;
+    }
+    .dog-slider {
+        padding-top: 0;
+    }
+    .guide-wraper p {
+        font-size: 20px;
+    }
+    .guide-wraper h6 {
+        font-size: 27px;
+    }
+    section .guides-wrapper .owl-nav button.owl-next::before {
+        transform: none;
+    }
+    section .owl-carousel .owl-nav button::before {
+        transform: scale(-1);
+    }
+    
+
+    footer.footer {
+        padding: 50px 0 0;
+    }
+    .footer-menu {
+        text-align: center;
+        padding-bottom: 35px;
+    }
+    .footer-menu ul li a {
+        font-size: 24px;
+    }
+    .mobile-footer-logo {
+        display: block;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .mobile-footer-logo img {
+        max-width: 110px;
+    }
+    .form-wrapper .form-group {
+        width: 100%;
+    }
+    .footer-logo {
+        display: none;
+    }
+    .footer-form {
+        max-width: 275px;
+        padding-bottom: 40px;
+    }
+    .footer-form h5 {
+        padding-bottom: 32px;
+    }
+    .footer-social ul li {
+        display: inline-block;
+        padding: 0 8px;
+    }
+    .footer-social ul {
+        text-align: center;
+        padding-bottom: 50px;
+    }
+    .copy-rights {
+        text-align: center;
+        padding: 0 0 15px;
+        font-weight: 400;
+    }
+    .index-form {
+        max-width: 90%;
+    }
+
+    .breed-price-banner .banner-content {
+        top: auto;
+        height: auto;
+        bottom: 60px;
+        text-align: center;
+    }
+    .breed-price-banner .banner-img img {
+        min-height: 58vh;
+        object-fit: cover;
+    }
+    .about-dachshund-prices h5 {
+        font-size: 26px;
+    }
+    .about-dachshund-prices h4 {
+        font-size: 40px;
+        text-align: center;
+    }
+    .breed-price-banner .banner-content h1 {
+        font-size: 37px;
+    }
+    .breed-price-banner .banner-content h5 {
+        font-size: 17px;
+        color: #fff !important;
+    }
+    section.Check-out-breeds::before {
+        border-radius: 0px 0px 60px 60px;
+        height: 30%;
+    }
+    .dachshund-guides {
+        padding: 50px 15px 40px;
+        border-radius: 34px;
+        margin-left: -40px;
+        margin-right: -40px;
+        margin-bottom: 50px;
+    }
+    .sidebar-title {
+        margin-bottom: 30px;
+    }
+    .about-dachshund-prices img {
+        padding: 20px 0 20px;
+    }
+    .about-dachshund-prices iframe {
+        min-height: 250px;
+    }
+    .dachshund-prices-guides {
+        padding: 40px 0px 80px
+    }
+    .petfind-wrapper.reverse .find-box{
+        margin: 0 auto;
+        margin-bottom: 60px;
+    }
+    .dachshund-guides .petfind-wrapper.reverse .find-box {
+        margin: 0 auto;
+    }
+    .dachshund-guides .find-box .btn.btn-blue {
+        padding: 10px 15px;
+    }
+    .Check-out-breeds .blog-title {
+        padding: 120px 0px 60px;
+    }
+    .breeds-size-maintenance .section-title h4{
+        font-size: 27px;
+        text-align: left;
+        max-width: 80%;
+        margin: 0 auto;
+    }
+    .Check-out-breeds .blog-title h3 {
+        font-size: 27px;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .breeds-size-maintenance .guide {
+        border-radius: 32px;
+        padding: 35px 0px 60px;
+    }
+    .breeds-size-maintenance .owl-carousel .owl-nav button::before {
+        transform: scale(0.9);
+    }
+    .breeds-size-maintenance .breeds-size-wrapper .owl-nav button {
+        width: 52px;
+        height: 52px;
+        left: -55px;
+        margin: 0;
+    }
+    .breeds-size-maintenance .section-title {
+        margin-bottom: 28px;
+    }
+    .breeds-size-maintenance:last-child {
+        padding: 0px 0px 144px;
+    }
+    img.breed-icon {
+        display: none;
+    }
+
+    .breed-content {
+        position: relative;
+        transform: none;
+        left: 0;
+        top: 0;
+    }
+    .breed-content .head-breed {
+        position: absolute;
+        left: 0;
+        transform: translateY(-50%);
+        top: -20%;
+        text-align: center;
+        width: 100%;
+    }
+    .breed__data {
+        background: var(--maincolor);
+        padding: 60px 0 80px;
+    }
+    .sausage-box ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .sausage-box ul li {
+        padding: 15px 10px;
+        width: 50%;
+    }
+    .jump-breed {
+        flex-wrap: wrap;
+    }
+    .jump-breed p {
+        width: 100%;
+        padding: 0 0 25px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .jump-breed-section ul {
+        width: 100%;
+        text-align: center;
+        padding: 10px 0 40px;
+    }
+    .jump-breed-section ul li {
+        display: block;
+    }
+    .jump-breed-section ul li a {
+        color: var(--maincolor);
+        padding: 18px 0;
+        position: relative;
+    }
+    .jump-breed-section ul li a:after {
+        content: "";
+        background: var(--green);
+        position: absolute;
+        height: 2px;
+        width: 80px;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .jump-breed-section ul:before {
+        content: "";
+        background: #fff;
+        position: absolute;
+        width: 100vw;
+        height: 100%;
+        left: 50%;
+        top: 0;
+        transform: translateX(-50%);
+    }
+    .jump-breed-section {
+        padding: 30px 0 85px;
+    }
+    h4.orange {
+        font-size: 42px;
+        text-align: center;
+    }
+    .overview-left {
+        text-align: center;
+    }
+    .overview-sidebar {
+        display: none;
+    }
+    .accordian-body {
+        padding-left: 20px;
+        font-size: 20px;
+    }
+    section.dachshund-prices-guides.border_radious-bottom .row {
+        flex-direction: column-reverse;
+    }
+    .petfind-wrapper .owl-nav {
+        position: absolute;
+        transform: translateY(-50%);
+        top: 50%;
+        left: 0;
+    }
+    .petfind-wrapper .owl-nav button.owl-next {
+        display: none;
+    }
+    .petfind-wrapper .owl-nav button.owl-prev {
+        margin: 0;
+    }
+    .dachshund-guides .petfind-wrapper {
+        padding-left: 65px;
+    }
+    .other-info__text {
+        padding: 55px 30px;
+    }
+    .other-info__head {
+        padding-bottom: 35px;
+    }
+    .other-info__head h3 {
+        font-size: 27px;
+    }
+    .other-info__text ul li:before {
+        font-size: 28px;
+        margin-right: 17px;
+    }
+    .other-info__text ul li {
+        font-size: 18px;
+    }
+    section.helpful-information .container {
+        padding: 0 20px;
+    }
+    .info-img img {
+        max-width: 195px;
+    }
+    .info-img {
+        margin-bottom: -45%;
+    }
+    .heading h3 {
+        font-size: 22px;
+        max-width: 250px;
+        margin: 0 auto;
+    }
+    section.dachshund-review .container {
+        padding: 0;
+    }
+    .review--slider .review-slide .review-desc {
+        margin: -45px 30px 40px;
+    }
+    .review--slider .owl-nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 30px;
+    }
+    section .review--slider .owl-nav button.owl-prev::before{
+        background-image: url(../images/blue-right.png);
+    }
+    section .review--slider .owl-nav button.owl-next::before{
+        background-image: url(../images/blue-left.png);
+    }
+    .dachshund-title h3 {
+        font-size: 27px;
+        line-height: 1.3;
+    }
+    .love-dachshund {
+        padding: 120px 0 60px;
+    }
+    img.jump-arrow {
+        display: block;
+        width: 40px;
+        margin-left: 25px;
+    }
+    .gallery-slider .owl-nav {
+        position: absolute;
+        transform: translateY(-50%);
+        top: 50%;
+        left: 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    section .gallery-slider .owl-nav button {
+        margin: 0 15px;
+        width: 25px;
+        height: 25px;
+        transform: scale(-1);
+    }
+    .sausage-box {
+        margin: 0 auto;
+    }
+    footer.footer .scrolldown {
+        display: none;
+    }
+    section .bread-dogs .owl-carousel .owl-nav button::before {
+        transform: none;
+    }
+    .scrolldown {
+        right: 20px;
+        bottom: 20px;
+    }
+    .scrolldown img {
+        max-width: 35px;
+    }
+    .orange-color {
+        margin-bottom: 20px;
+    }
+    .petfind-wrapper .find-box {
+        text-align: left;
+    }
+    .other-info__text .row .col-md-6:nth-child(even) {
+        text-align: left;
+    }
+}
